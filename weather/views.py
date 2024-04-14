@@ -15,5 +15,6 @@ def index(request):
             'humidity': str(json_data['main']['humidity']),
         }
     else:
-        city = {}
-    return render(request, 'index.html', data)
+        city=''
+        data = {}
+    return render(request, 'index.html', {'city':city, 'data':data})

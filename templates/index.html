@@ -48,13 +48,15 @@
           
                   <div class="card shadow-0 border"> 
                     <div class="card-body p-4">
-          
+                      
+                        {%if data.temp%}
                       <div class="d-flex flex-row align-items-center">
-                        <p>temp: {{temp}}</p>
-                        <p>pressure: {{pressure}}</p>
-                        <p>humidity:{{humidity}} </p>
+                        <h2> {{data.city}}</city>
+                        <p>temp: {{data.temp}}</p>
+                        <p>pressure: {{data.pressure}}</p>
+                        <p>humidity:{{data.humidity}} </p>
                       </div>
-          
+                       {%endif%}
                     </div>
                   </div>
           
